@@ -17,7 +17,7 @@ Before you begin, make sure you have the following installed:
 
 ### 1. Clone the Repository
 
-``sh
+```sh```
 git clone https://github.com/Hungtofu/test_app_thpt_score.git
 cd test_app_thpt_score
 
