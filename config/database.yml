@@ -49,5 +49,6 @@ test:
 #
 production:
   <<: *default
+  adapter: mysql2
   url: mysql://root:BMSoboHslpPPYysXaBEnkZuKJkrXTosP@yamanote.proxy.rlwy.net:18096/railway
 
