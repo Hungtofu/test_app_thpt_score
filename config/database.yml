@@ -9,13 +9,22 @@
 # And be sure to use new-style password hashing:
 #   https://dev.mysql.com/doc/refman/5.7/en/password-hashing.html
 #
+
+# default: &default
+#   adapter: mysql2
+#   encoding: utf8mb4
+#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#   username: root
+#   password: vinhhung03#
+#   socket: /var/run/mysqld/mysqld.sock
+
 default: &default
+  <<: *default
+  url: mysql://root:BMSoboHslpPPYysXaBEnkZuKJkrXTosP@yamanote.proxy.rlwy.net:18096/railway
   adapter: mysql2
   encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  # url: <%= ENV["DATABASE_URL"] %>
-  url: mysql://root:BMSoboHslpPPYysXaBEnkZuKJkrXTosP@yamanote.proxy.rlwy.net:18096/railway
-  socket: /var/run/mysqld/mysqld.sock
+
 
 development:
   <<: *default
@@ -50,6 +59,9 @@ test:
 #
 production:
   <<: *default
-  adapter: mysql2
   url: mysql://root:BMSoboHslpPPYysXaBEnkZuKJkrXTosP@yamanote.proxy.rlwy.net:18096/railway
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
 
