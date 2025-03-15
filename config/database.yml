@@ -59,9 +59,7 @@ test:
 #
 production:
   <<: *default
-  url: mysql://root:BMSoboHslpPPYysXaBEnkZuKJkrXTosP@yamanote.proxy.rlwy.net:18096/railway
-  adapter: mysql2
-  encoding: utf8mb4
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  url: <%= ENV["DATABASE_URL"] %>
 
 
+  
