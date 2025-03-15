@@ -17,9 +17,9 @@ Before you begin, make sure you have the following installed:
 
 ### 1. Clone the Repository
 
--```sh```
--git clone https://github.com/Hungtofu/test_app_thpt_score.git
--cd test_app_thpt_score
+- ```sh```
+- git clone https://github.com/Hungtofu/test_app_thpt_score.git
+- cd test_app_thpt_score
 
 ### 2. Install Dependencies
 
@@ -27,9 +27,9 @@ bundle install
 
 ### 3. Set Up Database
 
-rails db:create
-rails db:migrate
-rails db:seed  # Optional: Seed the database with sample data
+- rails db:create
+- rails db:migrate
+- rails db:seed  # Optional: Seed the database with sample data
 
 ### 4. Start the Server
 
