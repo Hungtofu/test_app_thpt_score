@@ -49,5 +49,5 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV["DATABASE_URL"] %>
+  url: mysql://root:BMSoboHslpPPYysXaBEnkZuKJkrXTosP@yamanote.proxy.rlwy.net:18096/railway
 
